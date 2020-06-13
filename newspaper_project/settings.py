@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'users.apps.UsersConfig', #local
     'pages.apps.PagesConfig', #local
+    'articles.apps.ArticlesConfig',#local
     'crispy_forms', #3rd party
     'django.contrib.admin',
     'django.contrib.auth',
@@ -129,3 +130,5 @@ LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = 'index'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+TIME_ZONE = 'America/New_York'
